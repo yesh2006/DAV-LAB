@@ -1,0 +1,37 @@
+import pandas as pd
+
+# ---- SAME DATA ----
+data = {
+    "Pickup_Time": ["08:00","09:00","18:00","22:00","10:00"],
+    "Drop_Time": ["08:20","09:15","18:40","22:10","09:50"],
+    "Trip_Distance": [5,3,7,0,4],
+    "Fare": [120,80,200,50,100],
+    "Passengers": [2,1,3,1,2]
+}
+
+df = pd.DataFrame(data)
+
+# Convert time
+df["Pickup_Time"] = pd.to_datetime(df["Pickup_Time"], format="%H:%M")
+df["Drop_Time"] = pd.to_datetime(df["Drop_Time"], format="%H:%M")
+
+# Clean data
+df_clean = df[
+    (df["Trip_Distance"] > 0) &
+    (df["Fare"] > 0) &
+    (df["Pickup_Time"] < df["Drop_Time"])
+]
+
+# ---- ACT I: R VALUE ----
+W, X, Y, Z = 1, 2, 3, 4   # replace with your digits
+
+S = W + X + Y + Z
+R = S
+while R > 9:
+    R = sum(map(int, str(R)))
+
+# ---- ACT V: SIMULATION ----
+df_clean["New_Fare"] = df_clean["Fare"] * (1 + 0.1 * R)
+
+print("Original vs New Fare:")
+print(df_clean[["Fare", "New_Fare"]])

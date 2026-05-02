@@ -1,0 +1,39 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create data
+data = {
+    "Pickup_Time": ["08:00","09:00","18:00","22:00","10:00"],
+    "Drop_Time": ["08:20","09:15","18:40","22:10","09:50"],
+    "Trip_Distance": [5,3,7,0,4],
+    "Fare": [120,80,200,50,100],
+    "Passengers": [2,1,3,1,2]
+}
+
+df = pd.DataFrame(data)
+
+# Convert time
+df["Pickup_Time"] = pd.to_datetime(df["Pickup_Time"], format="%H:%M")
+df["Drop_Time"] = pd.to_datetime(df["Drop_Time"], format="%H:%M")
+
+# Clean data
+df_clean = df[
+    (df["Trip_Distance"] > 0) &
+    (df["Fare"] > 0) &
+    (df["Pickup_Time"] < df["Drop_Time"])
+]
+
+# Act III step (IMPORTANT)
+df_clean["Hour"] = df_clean["Pickup_Time"].dt.hour
+hourly = df_clean.groupby("Hour").size()
+
+# Act IV
+hourly.plot(kind='line', marker='o')
+plt.xlabel("Hour")
+plt.ylabel("Trips")
+plt.title("Trip Volume by Hour")
+plt.grid()
+
+plt.savefig("act4_graph.png")
+
+print("Graph saved as act4_graph.png")
