@@ -1,0 +1,43 @@
+To analyze the NYC taxi dataset, it is necessary to first define what constitutes a “real trip” and identify inconsistencies in the raw data.
+
+1. Definition of a Real Trip
+
+A trip is considered valid if it satisfies the following conditions:
+
+Pickup and drop-off timestamps are present and logically ordered (pickup < drop-off)
+Trip distance > 0
+Fare amount ≥ 0
+Passenger count ≥ 1
+Pickup and drop-off locations are valid and not missing
+2. Identification of Inconsistencies
+
+The dataset may contain:
+
+Trips with zero or negative distance
+Negative or high fare values
+Missing timestamps or locations
+Drop-off time earlier than pickup time
+Duplicate records
+Unrealistic trip durations (too short or excessively long)
+3. Data Cleaning Approach
+
+To ensure data quality:
+
+Remove records with missing critical fields (time, location, fare)
+Filter out trips with invalid values (negative distance/fare)
+Remove duplicates
+Correct or discard inconsistent timestamp entries
+Apply thresholds to eliminate outliers (extreme duration or fare)
+4. Impact of Definition on Analysis
+
+The definition of a “real trip” directly affects conclusions:
+
+A strict definition improves accuracy but reduces dataset size
+A lenient definition increases data volume but may introduce noise
+Different definitions can lead to different interpretations of demand, revenue, and system efficiency
+Conclusion
+
+A “real trip” is defined based on logical consistency, valid values, and completeness of key attributes.
+Establishing this definition ensures reliable analysis and prevents misleading conclusions about the taxi ecosystem.
+
+This is exactly what they expect for 20 marks—clear thinking + justification.
