@@ -1,0 +1,10 @@
+
+By the end of this investigation, the objective was not to arrive at a perfect answer, but to build a defensible and reasoned understanding of the NYC taxi system.
+Throughout the analysis, each step—from data cleaning to visualization and simulation—was guided by clear decisions. The definition of a “valid trip,” the choice of aggregation by hour, and the simulation of fare changes were all made with justification, ensuring that the results are not arbitrary but logically supported.
+At the same time, assumptions were critically examined. Patterns observed in the data, such as peak-hour demand, could be interpreted as behavioral trends. However, alternative explanations such as system constraints or data limitations were also considered. This ensures that the analysis does not rely on a single viewpoint without questioning its validity.
+It is also important to recognize the limits of the conclusions. The dataset represents a snapshot of system activity and may not capture all external factors influencing behavior. Therefore, while patterns such as cyclical demand and fare sensitivity are visible, they should not be treated as absolute truths.
+Ultimately, the system may appear stable or under strain depending on how the data is interpreted. The observed patterns suggest a structured and cyclical behavior, but it remains necessary to distinguish between genuine signals and patterns that arise from noise or limited observation.
+
+Final Statement:
+
+The investigation concludes that the NYC taxi system exhibits consistent patterns, but careful analysis is required to determine whether these patterns reflect real behavioral shifts or simply noise that appears convincing.
