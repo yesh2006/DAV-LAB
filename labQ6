@@ -1,0 +1,62 @@
+1. What Can Be Trusted (Data Reliability)
+
+The first step is to establish confidence in the dataset:
+
+Invalid and inconsistent records (such as zero-distance trips, incorrect timestamps, and negative fares) are removed
+Only logically valid trips are retained for analysis
+The proportion of retained vs removed data is clearly reported
+
+This ensures that all conclusions are built on a reliable and defensible data foundation.
+
+2. What is Actually Happening (Observed Reality)
+
+The report focuses strictly on patterns derived from the data:
+
+Trip volumes show consistent peaks during specific hours
+Certain locations repeatedly exhibit higher demand
+Fare and tipping behavior follow observable trends
+
+These findings are presented as observations, with interpretation clearly separated to avoid bias.
+
+3. Where the System Shows Strain or Stability
+
+The system is analyzed to identify performance zones:
+
+Strain (Stress Zones):
+High-demand periods where the system experiences pressure
+Areas with dense trip activity and possible inefficiencies
+Stability Zones:
+Time periods with balanced demand and supply
+Regions with consistent and manageable activity
+
+This helps highlight where intervention may be required.
+
+4. What Happens if a Decision is Made (Simulation)
+
+Using the parameter change defined in Act V:
+
+The system response is evaluated across a range of possible outcomes
+Possible effects include reduced demand, increased driver participation, or imbalance in supply and demand
+Uncertainty is explicitly acknowledged rather than hidden
+
+This ensures that decisions are made with awareness of both risks and variability.
+
+5. Risk of Misinterpretation
+
+A careless analysis could lead to incorrect conclusions by:
+
+Treating short-term fluctuations as long-term trends
+Ignoring data cleaning and using inconsistent records
+Confusing correlation with causation
+
+To prevent this:
+
+Only validated data is used
+Patterns are confirmed across multiple time intervals
+A clear distinction is maintained between observation and interpretation
+Final Conclusion
+
+The Power BI report provides a structured and transparent view of the system.
+It clearly communicates what can be trusted, what is happening, where the system is under stress, and how it may respond to changes.
+
+By addressing both insights and potential misinterpretations, the analysis enables informed and responsible decision-making.
