@@ -1,0 +1,50 @@
+Parameter Selection
+
+The chosen parameter for intervention is fare amount.
+
+This is selected because fare directly influences both:
+
+Passenger demand (affordability)
+Driver participation (profitability)
+
+The magnitude of change is linked to R, defined earlier.
+
+2. Proposed Change
+
+Fare is increased by a factor proportional to R:
+
+New Fare=Original Fare×(1+0.1R)
+
+This represents a controlled but noticeable increase in pricing.
+
+3. Expected Impact
+On Passengers:
+Higher fares may reduce demand, especially for non-essential trips
+On Drivers:
+Increased earnings per trip may attract more drivers
+On System Dynamics:
+Possible imbalance between supply and demand
+
+4. System Response Analysis
+Absorption:
+If demand remains stable despite price increase, the system absorbs the change
+Amplification:
+If reduced demand leads to fewer trips and further driver withdrawal, the effect is amplified
+Unexpected Behavior:
+Sudden shifts in demand patterns or location preferences may emerge
+
+5. Interpretation
+
+The system is likely to show a mixed response:
+
+Short-term amplification due to reduced demand
+Long-term stabilization if driver supply adjusts
+
+This indicates a sensitive balance between pricing and user behavior.
+
+6.  Conclusion
+
+The NYC taxi system does not respond passively to parameter changes.
+Instead, it reacts dynamically, with the potential to both absorb and amplify effects depending on conditions.
+
+This highlights that even small policy changes, when scaled by R, can significantly influence system stability and efficiency.
