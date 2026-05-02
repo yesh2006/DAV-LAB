@@ -1,0 +1,57 @@
+1. Data Transformation and Aggregation
+
+To understand large-scale behavior, trip data is aggregated into meaningful time intervals:
+
+Hourly aggregation to capture short-term variations
+Daily aggregation to observe consistent trends
+Weekly aggregation to identify broader patterns
+
+Key metrics considered:
+
+Trip volume
+Average fare
+Tip behavior
+
+2. Pattern Identification
+
+After aggregation, different types of patterns are observed:
+
+Persistent Patterns:
+Repeating peaks during morning and evening hours
+Consistent demand in key locations
+Disappearing Patterns:
+Sudden spikes that do not repeat across time
+Temporary fluctuations caused by specific events
+Non-Existent Patterns:
+Apparent trends caused by random noise
+Misleading patterns due to small or biased samples
+
+3. Interpretation
+Persistent patterns reflect true system behavior
+Disappearing patterns indicate temporary influences
+Non-existent patterns arise due to random variation or observational bias
+
+4. Nature of the System
+
+The system shows a cyclical structure, with:
+
+Regular daily and weekly trends
+Predictable variations linked to human activity
+
+However, it is not fully stable due to:
+
+External disruptions
+Random fluctuations
+
+5. Comparative Insight (Act I Connection)
+
+By comparing the R−1 (Stress) and R+1 (Stability) months, we observe that the cyclical nature of the system remains consistent, but the amplitude (strength of the signal) changes.
+
+This indicates that while the underlying rhythm of the city does not change, the intensity of activity varies, reflecting shifts in system efficiency and demand pressure.
+
+6. Conclusion
+
+The NYC taxi system behaves as a structured but dynamic signal.
+It is primarily cyclical, with consistent recurring patterns, but also includes noise that can create misleading observations.
+
+The persistence of rhythm combined with changing amplitude confirms that the system is not broken, but gradually drifting in performance.
