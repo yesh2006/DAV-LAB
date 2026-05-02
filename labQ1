@@ -1,0 +1,26 @@
+Let the last four digits of the roll number be W,X,Y,Z.
+Let R be the digital root of W+X+Y+Z.
+Given function:
+
+f(x)=Xcube/3-Rxsquare+(Rsquare-1)x
+first derivative:
+          f′(x)=x2−2Rx+(R2−1)
+To find critical points, solve:
+f′(x)=0
+   x2−2Rx+(R2−1)=0
+Factorizing:
+    (x−(R+1))(x−(R−1))=0
+Hence, critical points are:
+      x=R+1 and x=R−1
+Second derivative:
+      f′′(x)=2x−2R
+At x=R+1: 
+   f′′(R+1)=2>0⇒local minimum (zone of stability)
+At x=R−1:
+  f′′(R−1)=−2<0⇒local maximum (zone of stress)
+The system has:
+
+Zone of stress at x=R−1
+Zone of stability at x=R+1
+
+These values define the range where behavior changes.
